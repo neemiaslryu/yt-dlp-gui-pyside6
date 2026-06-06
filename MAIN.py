@@ -300,6 +300,8 @@ class MainWindow(QMainWindow):
         self.btn_cancelar.clicked.connect(self.cancelar_processo)
         self.btn_limpar.clicked.connect(self.limpar_tudo)
 
+        self._playlist_updating = False
+
         self.input_url.textChanged.connect(self.sync_ui_state)
         self.input_pasta.textChanged.connect(self.sync_ui_state)
         self.input_nome_arquivo.textChanged.connect(self.sync_ui_state)
@@ -620,6 +622,7 @@ class MainWindow(QMainWindow):
             self.set_running_state(False)
 
     def populate_playlist_table(self):
+        self._playlist_updating = True
         self.table_playlist.blockSignals(True)
         self.table_playlist.setRowCount(0)
         for entry in self.playlist_entries:
@@ -641,7 +644,9 @@ class MainWindow(QMainWindow):
             self.table_playlist.setItem(row, 2, item_title)
             self.table_playlist.setItem(row, 3, item_duration)
             self.table_playlist.setItem(row, 4, item_id)
+
         self.table_playlist.blockSignals(False)
+        self._playlist_updating = False
 
     def aplicar_filtro_playlist(self):
         termo = self.input_filtro.text().strip().lower()
@@ -658,6 +663,7 @@ class MainWindow(QMainWindow):
         self.sync_ui_state()
 
     def marcar_todos(self, checked):
+        self._playlist_updating = True
         self.table_playlist.blockSignals(True)
         state = Qt.Checked if checked else Qt.Unchecked
         for row in range(self.table_playlist.rowCount()):
@@ -666,9 +672,12 @@ class MainWindow(QMainWindow):
                 if item_check:
                     item_check.setCheckState(state)
         self.table_playlist.blockSignals(False)
+        self._playlist_updating = False
         self.sync_ui_state()
 
     def on_playlist_item_changed(self, item):
+        if self._playlist_updating:
+            return
         if item and item.column() == 0:
             self.sync_ui_state()
 
@@ -684,13 +693,8 @@ class MainWindow(QMainWindow):
             return
 
         if not self.input_pasta.text().strip():
-            QMessageBox.warning(
-            self,
-            "Campo obrigatório",
-            "Selecione uma pasta de saída antes de baixar."
-        )
-        return
-
+            QMessageBox.warning(self, "Campo obrigatório", "Selecione uma pasta de saída antes de baixar.")
+            return
 
         url = self.input_url.text().strip()
         if not url:
