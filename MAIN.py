@@ -683,6 +683,15 @@ class MainWindow(QMainWindow):
             QMessageBox.critical(self, "Erro", "ffmpeg é necessário para MP3.")
             return
 
+        if not self.input_pasta.text().strip():
+            QMessageBox.warning(
+            self,
+            "Campo obrigatório",
+            "Selecione uma pasta de saída antes de baixar."
+        )
+        return
+
+
         url = self.input_url.text().strip()
         if not url:
             QMessageBox.warning(self, "Campo obrigatório", "Informe uma URL.")
