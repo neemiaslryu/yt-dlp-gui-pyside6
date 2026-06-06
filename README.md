@@ -1,6 +1,6 @@
 ## 📍 Acesso rápido
 
-- [Instalação Windows](#instalação-no-windows)
+- [Instalação Windows](#instalar-dependências)
 - [Uso básico](#uso-básico)
 - [Apresentação](#apresentação)
 
