@@ -1,7 +1,8 @@
 # 🎬 YT-DLP GUI
 
 Interface gráfica em **Python + PySide6** para facilitar o uso do `yt-dlp` sem depender do terminal. 🚀
-
+- SIM, Processo  foi feito usando IA, sim. para sanar um problema pessoal. que não achei para minha distro.
+ Apesar de ter testado, ainda esta em processo de estudo. 
 <img width="1409" height="884" alt="image" src="https://github.com/user-attachments/assets/b46c6a97-95c5-4527-95eb-bb7548037935" />
 
 
