@@ -39,6 +39,29 @@ No Arch Linux:
 sudo pacman -S ffmpeg
 ```
 
+## 🪟 Instalação no Windows
+
+### 1. Instale o Python
+
+Baixe e instale o **Python 3.10+** no Windows. Durante a instalação, marque a opção **Add Python to PATH**. Depois confirme no Prompt de Comando:
+
+```bash
+python --version
+```
+
+### 2. Instale o projeto e as dependências
+
+Abra o **PowerShell** ou o **Prompt de Comando** na pasta do projeto e execute:
+
+```bash
+python -m pip install --upgrade pip
+python -m pip install PySide6 yt-dlp
+```
+
+### 3. Instale o ffmpeg
+
+Baixe o FFmpeg para Windows, extraia o conteúdo e localize a pasta `bin`. Você precisa garantir que `ffmpeg.exe` e `ffprobe.exe` estejam disponíveis.
+
 ## ▶️ Uso básico
 
 1. Abra a aplicação.
@@ -55,6 +78,11 @@ sudo pacman -S ffmpeg
 ```bash
 python MAIN.py
 ```
+
+
+
+
+
 
 ## 📌 Observações
 
