@@ -2,6 +2,9 @@
 
 Interface gráfica em **Python + PySide6** para facilitar o uso do `yt-dlp` sem depender do terminal. 🚀
 
+<img width="1409" height="884" alt="image" src="https://github.com/user-attachments/assets/b46c6a97-95c5-4527-95eb-bb7548037935" />
+
+
 ## ✨ Apresentação
 
 O projeto transforma o uso do `yt-dlp` em uma experiência visual mais simples e organizada. Com ele, você pode baixar vídeos, extrair áudio em MP3, analisar playlists, selecionar itens específicos e acompanhar a execução em tempo real.
