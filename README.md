@@ -1,8 +1,8 @@
 ## 📍 Acesso rápido
 
 - [Instalação Windows](#-instalação-no-windows-1)
-- [Uso básico](#uso-básico)
-- [Apresentação](#apresentação)
+- [Uso básico](#%EF%B8%8F-uso-básico)
+
 
 ## 🪟 Instalação no Windows
 ...
