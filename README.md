@@ -1,2 +1,59 @@
-# yt-dlp-gui-pyside6
-O projeto foi desenvolvido com foco em transformar uma ferramenta originalmente baseada em linha de comando em uma experiência mais acessível.
+# 🎬 YT-DLP GUI
+
+Interface gráfica em **Python + PySide6** para facilitar o uso do `yt-dlp` sem depender do terminal. 🚀
+
+## ✨ Apresentação
+
+O projeto transforma o uso do `yt-dlp` em uma experiência visual mais simples e organizada. Com ele, você pode baixar vídeos, extrair áudio em MP3, analisar playlists, selecionar itens específicos e acompanhar a execução em tempo real.
+
+## 🛠️ Instalação
+
+### Requisitos
+
+- Python 3.10+
+- `yt-dlp`
+- `ffmpeg`
+- PySide6
+
+### Instalar dependências
+
+```bash
+pip install PySide6 yt-dlp
+```
+
+### Instalar o ffmpeg
+
+No Debian/Ubuntu:
+
+```bash
+sudo apt install ffmpeg
+```
+
+No Arch Linux:
+
+```bash
+sudo pacman -S ffmpeg
+```
+
+## ▶️ Uso básico
+
+1. Abra a aplicação.
+2. Cole a URL do vídeo ou da playlist.
+3. Escolha o tipo de saída: vídeo ou MP3.
+4. Se quiser, defina a qualidade e o nome do arquivo.
+5. Escolha a pasta de destino.
+6. Clique em **Analisar playlist** se a URL tiver vários itens.
+7. Marque os itens que deseja baixar.
+8. Clique em **Baixar**.
+
+### Executar o programa
+
+```bash
+python MAIN.py
+```
+
+## 📌 Observações
+
+- Para converter em MP3, o `ffmpeg` precisa estar instalado.
+- O comando final gerado aparece na interface antes da execução.
+- Logs e progresso são exibidos durante o processo.
