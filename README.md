@@ -1,3 +1,13 @@
+## 📍 Acesso rápido
+
+- [Instalação Windows](#instalação-no-windows)
+- [Uso básico](#uso-básico)
+- [Apresentação](#apresentação)
+
+## 🪟 Instalação no Windows
+...
+
+
 # 🎬 YT-DLP GUI
 
 Interface gráfica em **Python + PySide6** para facilitar o uso do `yt-dlp` sem depender do terminal. 🚀
