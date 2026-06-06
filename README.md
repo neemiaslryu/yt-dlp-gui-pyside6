@@ -83,6 +83,33 @@ Baixe o FFmpeg para Windows, extraia o conteúdo e localize a pasta `bin`. Você
 7. Marque os itens que deseja baixar.
 8. Clique em **Baixar**.
 
+
+## Menu de Ações 
+<img width="421" height="199" alt="image" src="https://github.com/user-attachments/assets/30a3bbd8-0562-4d3a-93ce-adb8798d1208" />
+
+## 🔘 Função dos botões
+
+### 📁 Procurar
+Abre a janela para selecionar a pasta de destino onde os arquivos serão salvos.
+
+### 🔎 Analisar playlist
+Faz a leitura da playlist informada na URL e carrega os itens na tabela da interface.
+
+### ✅ Marcar todos
+Seleciona todos os itens visíveis da playlist para download.
+
+### ⬜ Desmarcar todos
+Remove a seleção de todos os itens visíveis da playlist.
+
+### ⬇️ Baixar
+Inicia o download usando as opções configuradas na interface.
+
+### 🛑 Cancelar
+Interrompe a análise ou o download que estiver em execução.
+
+### 🧹 Limpar
+Remove os dados preenchidos, a lista da playlist, o log e o preview do comando, retornando a interface ao estado inicial.
+
 ### Executar o programa
 
 ```bash
