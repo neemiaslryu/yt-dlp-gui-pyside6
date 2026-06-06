@@ -684,7 +684,7 @@ class MainWindow(QMainWindow):
             return
 
         if not self.input_pasta.text().strip():
-         QMessageBox.warning(
+            QMessageBox.warning(
             self,
             "Campo obrigatório",
             "Selecione uma pasta de saída antes de baixar."
